@@ -1,0 +1,747 @@
+
+/*
+html, body, div, span, applet, object,
+iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+pre, a, abbr, acronym, address, big, cite,
+code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b,
+u, i, center, dl, dt, dd, ol, ul, li, fieldset,
+form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, article, aside,
+canvas, details, embed, figure, figcaption,
+footer, header, hgroup, menu, nav, output, ruby,
+section, summary, time, mark, audio, video */
+
+
+  
+
+/*fade out animation*/
+@keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  
+  h1 {
+    animation: fadeOut 10s ease;
+  }
+
+/*backface-visibility card flipping*/
+@keyframes spin {
+    from {
+      transform: rotateY(0);
+    }
+    to {
+      transform: rotateY(1turn);
+    }
+  }
+  
+/*animatble flowing- "a showcase...*/
+@keyframes animation {
+    from {
+      letter-spacing: 10px;
+    }
+    to {
+      letter-spacing: 0;
+    }
+  }
+  
+  .animated {
+    animation: animation 10s ease infinite;
+  }
+  
+a{
+    color: rgb(3, 3, 3);
+}
+
+  h4 {
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  .card {
+    animation: spin 8s ease;
+    animation-iteration-count: infinite;
+    
+    
+  }
+  
+  
+  .container {
+    perspective: 1000px;
+    
+  }
+  
+/*background-clip...h5*/ 
+.clip-text {
+    background: url(https://media.giphy.com/media/l0HlA96OHn6pgUaQw/giphy.gif);
+    
+    background-size: cover;
+    background-position: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color:transparent; 
+    opacity: 0.2; 
+    width: 300px;
+    height: 100px;
+    box-sizing: border-box;
+    font-size: 58px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 100px;
+    flex-shrink: 0;
+  }
+/*email part and contact*/
+  .clip-tex {
+    background: url(https://media.giphy.com/media/c3OZsDoaz7kD6/giphy.gif);
+   
+    background-size: cover;
+    background-position: center;
+    background-clip: text;
+    background-color: blue;
+    -webkit-background-clip: text;
+    color:transparent; 
+    opacity: 0.2; 
+    width: 1200px;
+    height: 100px;
+    box-sizing: border-box;
+    font-size: 58px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 100px;
+    flex-shrink: 0;
+    
+    
+  }
+
+/*contact form*/
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 10%; /* Full width */
+  padding: 2px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 0px; /* Add a top margin */
+  margin-bottom: 0px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 2px 2px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f265;/* this part changes top container where main picture located*/
+  padding: 20px;
+}
+
+
+
+
+
+
+
+/*end contact form*/
+
+.box{
+    width: 200px;
+    height: 200px;
+    border: 15px solid;
+    border-image:url("image path") 10% round;
+}
+
+
+
+body{
+    line-height: 1;
+}
+
+ol, ul{
+    list-style: none;
+}
+
+blockquote, q{
+    quotes: none;
+}
+
+blockquote:efore, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+table{
+    border-collapse: collapse;
+    border: spacing 0;
+}
+/*color of text(h1,p), background, in the middle-align*/
+body{
+    color: rgb(3, 11, 9);
+    background-color: rgb(216, 224, 226);
+    text-align: center;
+    background-color: rgb(155, 162, 172);
+    
+    
+    
+    
+    
+}
+
+/*CONTACT ME FORM */
+/* Basic Grey */
+.basic-grey {
+	margin-left:auto;
+	margin-right:auto;
+    max-width: 500px;
+    background: #ffffff;
+    padding: 25px 15px 25px 10px;
+    font: 12px Georgia, "Times New Roman", Times, serif;
+    color: rgb(241, 235, 235);
+    text-shadow: 1px 1px 1px #FFF;
+    border:1px solid #E4E4E4;
+}
+.basic-grey h1 {
+    font-size: 25px;
+    padding: 0px 0px 10px 40px;
+    display: block;
+    border-bottom:1px solid #E4E4E4;
+    margin: -10px -15px 30px -10px;;
+    color: #888;
+}
+.basic-grey h1>span {
+    display: block;
+    font-size: 11px;
+}
+.basic-grey label {
+    display: block;
+    margin: 0px;
+}
+.basic-grey label>span {
+    float: left;
+    width: 20%;
+    text-align: right;
+    padding-right: 10px;
+    margin-top: 10px;
+    color: #888;
+}
+.basic-grey input[type="text"], .basic-grey input[type="email"], .basic-grey textarea, .basic-grey select {
+	border: 1px solid #DADADA;
+	color: #888;
+	height: 30px;
+	margin-bottom: 16px;
+	margin-right: 6px;
+	margin-top: 2px;
+	outline: 0 none;
+	padding: 3px 3px 3px 5px;
+	width: 70%;
+	font-size: 12px;
+	line-height:15px;
+	box-shadow: inset 0px 1px 4px #ECECEC;
+	-moz-box-shadow: inset 0px 1px 4px #ECECEC;
+	-webkit-box-shadow: inset 0px 1px 4px #ECECEC;
+}
+.basic-grey textarea{
+	padding: 5px 3px 3px 5px;
+}
+.basic-grey select {
+    background: #FFF url('down-arrow.png') no-repeat right;
+    background: #FFF url('down-arrow.png') no-repeat right;
+    appearance:none;
+    -webkit-appearance:none; 
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+    width: 70%;
+    height: 35px;
+	line-height: 25px;
+}
+.basic-grey textarea{
+    height:100px;
+}
+.basic-grey .button {
+	background: #130202;
+	border: none;
+	padding: 10px 25px 10px 25px;
+	color: #FFF;
+	box-shadow: 1px 1px 5px #B6B6B6;
+	border-radius: 3px;
+	text-shadow: 1px 1px 1px #9E3F3F;
+	cursor: pointer;
+}
+.basic-grey .button:hover {
+    background: #CF7A7A
+}
+
+
+
+/*type of html*/
+html{
+    box-sizing: border-box;
+    font-size: 18pt;
+    scroll-behavior: smooth;
+    
+    
+}
+/*hover aware effect*/
+.btn{
+    text-decoration: none;
+    padding: 24px 72px;
+    background-color: #4e44df;
+    color: #fff;
+    border-radius: 100px; /*make boder round with something inside*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 22px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.btn::before{
+    content: "";
+    position: absolute;
+    left: var(--x);
+    top: var(--y);
+    transform: translate(-50%, -50%);
+    background-image: radial-gradient(circle closest-side, #08172e, transparent);
+    width: 0; height: 0;
+    transition: width 0.3s ease, height 0.3s ease;
+    z-index: -1;
+}
+.btn:hover::before{width: 250px; height: 250px;
+        
+}
+
+.content img{
+   filter: drop-shadow(2px 4px 8px #585858);
+}
+
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 1120px;
+  text-align: right;
+  text-decoration: none;
+  
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-instagram-circle {
+  background: #125688;
+  color: white;
+  float: right;
+ 
+}
+.fa-linkedin-circle {
+  background: #125688;
+  color: white;
+  float: right;
+}
+.fa-github-circle {
+  background: #125688;
+  color: white;
+  float: right;
+  
+}
+
+.div{
+    position:fixed;
+    z-index: 1;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    height: 100%;
+    width: 100%;
+}
+
+
+h1{
+    font-size: 36px;
+    color:rgb(224, 220, 220);
+    font-weight: 800;
+}
+
+h1:hover{color: rgb(212, 210, 225);
+    transition: all 0.3s ease;
+}
+h1::first-letter{
+    display: block;
+    float: auto;
+    margin: 3px;
+    font-size: 200%;
+}
+h2:before {
+    content: "";
+    color: black;
+    
+}
+h3{
+    text-align: center;
+    color: blue;
+    
+}
+
+/*line to divide contents*/
+hr.style-six{
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgb(3, 11, 9);
+    border-bottom: 1px solid solid rgb(255,255,255,0.3s);
+}
+
+.icon{
+    background:rgb(202, 210, 210);
+    cursor: pointer;
+    display:inline-block;
+    height: 24px;
+    padding: 16px;
+    width: 24px;
+    
+}
+
+
+label.icon{
+    position:fixed;
+    z-index: 200;
+    
+}
+
+.icon .menu,
+.icon .menu::before,
+.icon .menu::after{
+    background: #12a5ca;
+    content: '';
+    display: block;
+    height: 2px;
+    position: absolute;
+    transition: background ease .3s, top ease .3s .3s, transform ease .3s;
+}
+
+
+/*main top picture of me*/
+.-shape-outside {
+    shape-outside: circle(50%);
+    float: none;
+    
+  }
+  
+  .circle {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 60%;
+    margin-right: 24px;
+    margin-left: 24px;
+    margin-top: 24px;
+    overflow:hidden;
+    border: 1px solid rgb(4, 2, 2); 
+    
+  }
+  
+  div {
+    text-align: center;  
+  }
+  
+  html, body {
+    height:auto;
+  }
+
+/* a box(or table) around subject to read////////////////*/
+table {
+    width: 400px;
+    table-layout: fixed;
+    border-collapse: collapse;
+    margin: auto;
+  }
+  td{
+    border: 1px solid black;
+  }
+  body{
+    font-family: courier new;
+  }
+
+p:after{
+    content: '';
+    color: black;
+    
+}
+
+/*social media icons*/
+social-icons {
+  text-align: center;
+  }  
+.social-icons li {
+  display:ruby;
+  list-style-type:none;
+  float: right;
+  
+  }
+.social-icons li a {
+  border-bottom: none;
+  }
+.social-icons li img {
+  width:40px;
+  height:40px;
+  margin-right: 20px;
+}
+/*square animation
+.square{
+  width: 80px;
+  height: 80px;
+  width: 10px;
+  background: #2c4e3e;
+  animation: 1.6s spinner ease-in-out infinite both;
+  align-content: center;
+}
+@keyframes spinner{
+  from{ transform: scale(1) rotate(0);
+}
+50%{ transform: scale(2) rotate(180deg);
+}
+to{transform: scale(1) rotate(360deg);
+}
+}
+*/
+
+/*box arounf the whole html content*/
+#wrapper {
+    display: table-cell;
+    vertical-align: middle;
+    border: 1px solid black;
+    height: 150px;
+    width: 2600px;
+  }
+  
+  #center {
+    margin: auto;
+    background: red;
+    height: 20px;
+    width: 20px;
+  }
+/* COMING SOON SECTION */
+
+/* Header/logo Title ///////////*/
+.header {
+  padding: 80px;
+  margin-block-start: em;
+  text-align: center;
+  background: #2b2b2f;
+  color: white;
+  
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+  
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+/*header option ends/////////////*/
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Active/current link */
+.navbar a.active {
+  background-color: rgb(42, 39, 39);
+  color: white;
+}
+
+
+@keyframes loading {
+  0%   {opacity: 0.9; right: 0px; top: 0px;}
+  25%  {opacity: 0.7; right: 50px; top: 50px;}
+  50%  {opacity: 0.5; right: 0px; top: 50px;}
+  75%  {opacity: 0.3; right: 50px; top: 0px;}
+  100% {opacity: 0.1; right: 0px; top: 0px;}
+}
+
+@-webkit-keyframes loading {
+  0%   {opacity: 0.9; right: 0px; top: 0px;}
+  25%  {opacity: 0.7; right: 50px; top: 50px;}
+  50%  {opacity: 0.5; right: 0px; top: 50px;}
+  75%  {opacity: 0.3; right: 50px; top: 0px;}
+  100% {opacity: 0.1; right: 0px; top: 0px;}
+}
+
+.dotted {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  position: relative;
+  background-color: #7b0b2e;
+  animation-name: loading;
+  opacity: 1;
+  animation-duration: 4s;
+  animation-delay: 2s;
+  animation-iteration-count: 10;
+}
+
+.container1{
+  width: 100wv;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+}
+
+/*picture slides///////////*/
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 30%;
+  padding: 4px;
+}
+
+
+
+
+
+
+
+
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  
+}
+
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto
+}
+
+.mySlides {
+  display: none;
+height: 400px;
+border: solid 1px black;
+   
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #222428;
+  font-weight: bold;
+  font-size: 30px;
+  transition: .6s ease;
+  border-radius: 0 3px 3px 0
+}
+
+.next {
+  right: -50px;
+  border-radius: 3px 3px 3px 3px
+}
+
+.prev {
+  left: -50px;
+  border-radius: 3px 3px 3px 3px
+}
+
+.prev:hover,
+.next:hover {
+  color: #f2f2f2;
+  background-color: rgba(0, 0, 0, 0.8)
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding-top: 12px;
+padding-bottom: 12px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #222428
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color .6s ease
+}
+
+.active,
+.dot:hover {
+  background-color: #717171
+}
+
+video{
+  display: block;
+  margin-bottom: 1em;
+  float: left;
+  padding: 1em;
+  
+ 
+  
+  
+}
+
+
+
